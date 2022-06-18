@@ -11,6 +11,7 @@ import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CompComponent } from './comp/comp.component';
 import { CompFormComponent } from './comp/comp-form/comp-form.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -20,7 +21,8 @@ import { CompFormComponent } from './comp/comp-form/comp-form.component';
     EmpleadosComponent,
     EmpleadosFormComponent,
     CompComponent,
-    CompFormComponent
+    CompFormComponent,
+    MenuComponent
   
    
   ],
