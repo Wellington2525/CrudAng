@@ -1,0 +1,38 @@
+<div class="jumbotron">
+    <h1 class="display-5 text-center">Ingreso de Compañia</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-comp-form></app-comp-form>
+
+    </div>
+
+    <div class="col-md-6">
+       <table class="table table-responsy">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+             
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pd of service.list">
+                <td (click)="populateForm(pd)">{{pd.nombre}}</td>
+          
+                <td (click)="populateForm(pd)">{{pd.idcomp}}</td>
+                <td>
+                    <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.idcomp)"></i>
+                  
+                   
+                </td>
+
+            </tr>
+        </tbody>
+
+       </table>
+
+    </div>
+
+</div>
